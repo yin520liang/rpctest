@@ -1,0 +1,24 @@
+
+# common
+logs/
+
+# maven
+build/
+target/
+
+# idea
+.idea/
+*.iml
+
+# eclipse
+.settings/
+.project
+.classpath
+
+
+# project
+.patchs/
+.search-results/
+/src/main/resources/dev/
+
+/target/

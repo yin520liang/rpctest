@@ -14,10 +14,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class RpcServerProperties {
 	
-	@Value("registry.address")
+	@Value("${yang.rpc.registry.address}")
 	private String registryAddress;
 	
-	@Value("server.address")
+	@Value("${yang.rpc.server.address}")
 	private String serverAddress;
 
 	

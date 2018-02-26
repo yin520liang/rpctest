@@ -1,14 +1,16 @@
 /**
  * 
  */
-package yang.rpc.client.service;
+package yang.rpc.client;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.UUID;
 
-import yang.rpc.client.RpcClient;
+import org.springframework.stereotype.Component;
+
+import yang.rpc.client.service.ServiceDiscovery;
 import yang.rpc.server.RpcRequest;
 import yang.rpc.server.RpcResponse;
 

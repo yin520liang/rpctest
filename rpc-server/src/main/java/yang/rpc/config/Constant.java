@@ -12,7 +12,7 @@ package yang.rpc.config;
 public interface Constant {
 	int ZK_SESSION_TIMEOUT = 5000; // 5s
 	
-	String ZK_DATA_PATH = "/data";
-	
 	String ZK_REGISTRY_PATH = "/registry";
+	
+	String ZK_DATA_PATH =  ZK_REGISTRY_PATH + "/data";
 }

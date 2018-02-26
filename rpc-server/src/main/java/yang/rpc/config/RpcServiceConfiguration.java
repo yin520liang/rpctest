@@ -31,6 +31,7 @@ public class RpcServiceConfiguration {
 	@Qualifier("serviceRegistry")
 	@Bean
 	public ServiceRegistry serviceRegistry() {
+		System.out.println("=======" + rpcProperties.getRegistryAddress());
 		return new ServiceRegistry(rpcProperties.getRegistryAddress());
 	}
 	

@@ -45,7 +45,7 @@ public class RpcServiceConfiguration {
 	@Qualifier("rpcServer")
 	@Bean
 	public RpcServer rpcServer(@Autowired ServiceRegistry serviceRegistry, @Autowired List<Serializer> serializers) {
-		return new RpcServer(rpcProperties.getServerAddress(), serviceRegistry);
+		return new RpcServer(rpcProperties.getServerAddress(), serviceRegistry, serializers);
 	}
 	
 }

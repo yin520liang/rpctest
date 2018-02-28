@@ -8,6 +8,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
 import java.util.Map;
 
 import net.sf.cglib.reflect.FastClass;
@@ -53,6 +54,7 @@ public class RpcHandler extends SimpleChannelInboundHandler<RpcRequest>{
 
         Class<?> serviceClass = serviceBean.getClass();
         String methodName = request.getMethodName();
+        LOGGER.debug("call '{}' method of class {}", methodName, serviceClass.getName());
         Class<?>[] parameterTypes = request.getParameterTypes();
         Object[] parameters = request.getParameters();
 

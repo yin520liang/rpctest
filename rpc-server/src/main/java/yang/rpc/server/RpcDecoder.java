@@ -9,6 +9,9 @@ import io.netty.handler.codec.ByteToMessageDecoder;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import yang.rpc.serialize.Serializer;
 
 /**
@@ -18,6 +21,7 @@ import yang.rpc.serialize.Serializer;
  * @Date 2018年2月23日
  */
 public class RpcDecoder extends ByteToMessageDecoder {
+	private static final Logger LOGGER = LoggerFactory.getLogger(RpcHandler.class);
 
 	private Class<?> genericClass;
 	

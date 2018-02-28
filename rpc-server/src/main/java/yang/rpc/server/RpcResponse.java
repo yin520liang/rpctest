@@ -40,5 +40,12 @@ public class RpcResponse {
 		this.result = result;
 	}
     
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("requestId").append('=').append(requestId).append(',')
+			.append("error").append('=').append((error == null)?"" : error.toString()).append(',')
+			.append("result").append('=').append((String) result);
+		return builder.toString();
+	}
     
 }

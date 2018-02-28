@@ -62,4 +62,12 @@ public class RpcRequest {
 	}
 	
 	
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("requestId").append('=').append(requestId).append(',')
+			.append("class").append('=').append(className).append(',')
+			.append("method").append('=').append(methodName).append(',');
+		return builder.toString();
+	}
+	
 }

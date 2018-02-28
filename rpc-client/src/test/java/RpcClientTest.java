@@ -7,7 +7,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import yang.rpc.client.RpcProxy;
-import yang.rpc.client.service.HelloService;
+import yang.rpc.service.HelloService;
 
 /**
  * 
@@ -30,7 +30,7 @@ public class RpcClientTest {
     public void helloTest() {
         HelloService helloService = rpcProxy.create(HelloService.class);
         String result = helloService.hello("World");
-        Assert.assertEquals("Hello! World", result);
+        Assert.assertEquals("Hello, World", result);
     }
 
 }

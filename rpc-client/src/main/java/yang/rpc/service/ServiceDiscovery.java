@@ -1,7 +1,7 @@
 /**
  * 
  */
-package yang.rpc.client.service;
+package yang.rpc.service;
 
 import io.netty.util.internal.ThreadLocalRandom;
 

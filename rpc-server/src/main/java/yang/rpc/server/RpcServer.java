@@ -47,9 +47,10 @@ public class RpcServer implements ApplicationContextAware, InitializingBean{
 	private List<Serializer> serializers;
 
 
-	public RpcServer(String serverAddress, ServiceRegistry serviceRegistry) {
+	public RpcServer(String serverAddress, ServiceRegistry serviceRegistry, List<Serializer> serializers) {
 		this.serverAddress = serverAddress;
 		this.serviceRegistry = serviceRegistry;
+		this.serializers = serializers;
 	}
 
 

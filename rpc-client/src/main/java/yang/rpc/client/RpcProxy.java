@@ -10,9 +10,9 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Component;
 
-import yang.rpc.client.service.ServiceDiscovery;
 import yang.rpc.server.RpcRequest;
 import yang.rpc.server.RpcResponse;
+import yang.rpc.service.ServiceDiscovery;
 
 /**
  * @Title RpcProxy

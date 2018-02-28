@@ -9,6 +9,9 @@ import io.netty.handler.codec.MessageToByteEncoder;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import yang.rpc.serialize.Serializer;
 
 /**
@@ -18,6 +21,7 @@ import yang.rpc.serialize.Serializer;
  * @Date 2018年2月23日
  */
 public class RpcEncoder extends MessageToByteEncoder {
+	private static final Logger LOGGER = LoggerFactory.getLogger(RpcEncoder.class);
 
 	private Class<?> genericClass;
 	
@@ -31,10 +35,11 @@ public class RpcEncoder extends MessageToByteEncoder {
 	@Override
 	protected void encode(ChannelHandlerContext ctx, Object msg, ByteBuf out)
 			throws Exception {
-		if (genericClass.isInstance(msg)) {
+		if (genericClass.isInstance(msg)) {		
 			byte[] data = getSerializer(msg.getClass()).serialize(msg);
 			out.writeInt(data.length);
 			out.writeBytes(data);
+			LOGGER.debug("encode msg {}, byte length {}", msg.toString(), data.length);
 		}
 	}
 	

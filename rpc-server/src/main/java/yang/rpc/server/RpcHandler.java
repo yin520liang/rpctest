@@ -20,7 +20,6 @@ import org.slf4j.LoggerFactory;
 /**
  * @Title RpcHandler
  * @Description 
- * @Author lvzhaoyang
  * @Date 2018年2月23日
  */
 public class RpcHandler extends SimpleChannelInboundHandler<RpcRequest>{

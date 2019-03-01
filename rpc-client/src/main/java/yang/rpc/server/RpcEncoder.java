@@ -14,7 +14,6 @@ import yang.rpc.serialize.Serializer;
 /**
  * @Title RpcEncoder
  * @Description
- * @Author lvzhaoyang
  * @Date 2018年2月23日
  */
 public class RpcEncoder extends MessageToByteEncoder {

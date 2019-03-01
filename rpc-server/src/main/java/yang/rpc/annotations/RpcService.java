@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 /**
  * @Title RpcService
  * @Description 
- * @Author lvzhaoyang
  * @Date 2018年2月11日
  */
 @Target(ElementType.TYPE)

@@ -30,7 +30,6 @@ import yang.rpc.server.RpcResponse;
 /**
  * @Title RpcClient
  * @Description
- * @Author lvzhaoyang
  * @Date 2018年2月26日
  */
 public class RpcClient extends SimpleChannelInboundHandler<RpcResponse> {
@@ -70,9 +69,9 @@ public class RpcClient extends SimpleChannelInboundHandler<RpcResponse> {
 						public void initChannel(SocketChannel channel)
 								throws Exception {
 							channel.pipeline()
-									.addLast(new RpcEncoder(RpcRequest.class, serializers))
-									.addLast(new RpcDecoder(RpcResponse.class, serializers))
-									.addLast(RpcClient.this);
+									.addLast(new RpcEncoder(RpcRequest.class, serializers)) // outBound
+									.addLast(new RpcDecoder(RpcResponse.class, serializers)) // inBound
+									.addLast(RpcClient.this); // inBound
 						}
 					}).option(ChannelOption.SO_KEEPALIVE, true);
 

@@ -7,9 +7,6 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.UUID;
-
-import org.springframework.stereotype.Component;
-
 import yang.rpc.server.RpcRequest;
 import yang.rpc.server.RpcResponse;
 import yang.rpc.service.ServiceDiscovery;
@@ -17,7 +14,6 @@ import yang.rpc.service.ServiceDiscovery;
 /**
  * @Title RpcProxy
  * @Description
- * @Author lvzhaoyang
  * @Date 2018年2月26日
  */
 public class RpcProxy {

@@ -9,7 +9,6 @@ import yang.rpc.service.HelloService;
 /**
  * @Title HelloServiceImpl
  * @Description 
- * @Author lvzhaoyang
  * @Date 2018年2月11日
  */
 @RpcService(value = HelloService.class)

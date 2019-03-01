@@ -6,7 +6,6 @@ package yang.rpc.client.config;
 /**
  * @Title Constant
  * @Description 
- * @Author lvzhaoyang
  * @Date 2018年2月23日
  */
 public interface Constant {

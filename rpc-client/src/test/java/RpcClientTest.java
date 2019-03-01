@@ -16,7 +16,6 @@ import yang.rpc.service.HelloService;
 /**
  * @Title RpcClientTest
  * @Description 
- * @Author lvzhaoyang
  * @Date 2018年2月26日
  */
 @RunWith(SpringJUnit4ClassRunner.class)

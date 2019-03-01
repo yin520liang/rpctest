@@ -5,7 +5,6 @@ package yang.rpc.server;
 
 /**
  * RPC响应
- * @Author lvzhaoyang
  * @Date 2018年2月24日
  */
 public class RpcResponse {

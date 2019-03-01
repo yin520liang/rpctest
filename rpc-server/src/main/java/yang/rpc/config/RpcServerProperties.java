@@ -8,7 +8,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * RPC Server Properties
- * @Author lvzhaoyang
  * @Date 2018年2月11日
  */
 @Component

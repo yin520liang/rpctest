@@ -17,7 +17,6 @@ import com.dyuproject.protostuff.runtime.RuntimeSchema;
 /**
  * 序列化工具
  * @Title DefaultSerializer
- * @Author lvzhaoyang
  * @Date 2018年2月26日
  */
 public class DefaultSerializer implements Serializer{

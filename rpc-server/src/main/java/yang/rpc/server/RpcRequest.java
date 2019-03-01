@@ -6,7 +6,6 @@ package yang.rpc.server;
 /**
  * RPC请求
  * 
- * @Author lvzhaoyang
  * @Date 2018年2月24日
  */
 public class RpcRequest {

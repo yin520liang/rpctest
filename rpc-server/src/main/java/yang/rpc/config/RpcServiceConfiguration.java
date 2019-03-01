@@ -18,7 +18,6 @@ import yang.rpc.service.registry.ServiceRegistry;
 
 /**
  * RPC Server Configuration
- * @Author lvzhaoyang
  * @Date 2018年2月11日
  */
 @Configuration

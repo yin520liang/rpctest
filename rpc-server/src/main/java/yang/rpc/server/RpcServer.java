@@ -31,7 +31,6 @@ import yang.rpc.service.registry.ServiceRegistry;
 /**
  * @Title RpcServer
  * @Description 
- * @Author lvzhaoyang
  * @Date 2018年2月11日
  */
 public class RpcServer implements ApplicationContextAware, InitializingBean{
@@ -66,9 +65,9 @@ public class RpcServer implements ApplicationContextAware, InitializingBean{
 					protected void initChannel(SocketChannel ch)
 							throws Exception {
 						ch.pipeline()
-							.addLast(new RpcDecoder(RpcRequest.class, serializers))
-							.addLast(new RpcEncoder(RpcResponse.class, serializers))
-							.addLast(new RpcHandler(handlerMap));
+							.addLast(new RpcDecoder(RpcRequest.class, serializers)) // inbound
+							.addLast(new RpcEncoder(RpcResponse.class, serializers)) // outbound
+							.addLast(new RpcHandler(handlerMap)); // inbound
 					}			
 				})
 				.option(ChannelOption.SO_BACKLOG, 128)

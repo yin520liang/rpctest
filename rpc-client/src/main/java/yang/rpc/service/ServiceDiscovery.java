@@ -22,7 +22,6 @@ import yang.rpc.client.config.Constant;
 /**
  * @Title ServiceDiscovery
  * @Description
- * @Author lvzhaoyang
  * @Date 2018年2月26日
  */
 public class ServiceDiscovery {

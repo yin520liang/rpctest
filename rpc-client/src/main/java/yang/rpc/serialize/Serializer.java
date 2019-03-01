@@ -7,7 +7,6 @@ package yang.rpc.serialize;
  * 序列化接口
  * 
  * @Title Serializer
- * @Author lvzhaoyang
  * @Date 2018年2月26日
  */
 public interface Serializer {

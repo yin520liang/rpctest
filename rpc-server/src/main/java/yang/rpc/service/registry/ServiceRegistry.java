@@ -19,7 +19,6 @@ import yang.rpc.config.Constant;
 /**
  * @Title ServiceRegistry
  * @Description 服务注册
- * @Author lvzhaoyang
  * @Date 2018年2月11日
  */
 public class ServiceRegistry {

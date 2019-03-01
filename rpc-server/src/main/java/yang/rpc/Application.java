@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Application entry
- * @Author lvzhaoyang
  * @Date 2018年2月23日
  */
 @SpringBootApplication
